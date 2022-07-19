@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Skeleton Form</title>
+</head>
+<body>
+    <div id="order">
+        <form action="http://127.0.0.1:3000/process_post" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="full_name">
+                </li>
+                <li>
+                    <label for="dept">Department:</label>
+                    <input type="text" id="dept" name="department">
+                </li>
+                <li>
+                    <label for="dets">Order Details:</label>
+                    <input type="text" id="dets" name="details">
+                </li>
+                <li class="button">
+                    <button type="submit">Submit Work Order</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+
+
+    <!-- <script>
+        const orderElement = document.getElementById('order');
+        const formElement = document.forms[0]
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            orderElement.innerHTML = 'Hello ' + formElement.full_name.value + '! Someone will contact you shortly about your work order.';
+            orderElement.style.display = 'block';
+        })
+    </script> -->
+    
+</body>
+</html>

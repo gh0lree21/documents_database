@@ -1,0 +1,13 @@
+{
+    "name": "form-skeleton",
+    "description": "description",
+    "authors": "Grant Holley",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "express": "^4.18.1",
+        "firebase": "^9.9.0",
+        "formidable": "^2.0.1"
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Confirmation Page</title>
+</head>
+<body>
+    <script>
+        const orderElement = document.getElementById('order');
+        const formElement = document.forms[0]
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            orderElement.innerHTML = 'Hello ' + formElement.full_name.value + '! Someone will contact you shortly about your work order.';
+            orderElement.style.display = 'block';
+        })
+    </script>
+
+
+
+    <script type="module" src="app.js"></script>
+    
+</body>
+</html>

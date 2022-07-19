@@ -1,0 +1,30 @@
+#order {
+    max-width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    border-style: ridge;
+    background-color: #CBBFBB;
+    color: #493843;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body {
+    background-color: white;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 100px;
+}
+button {
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    background-color: #F3DACE;
+    grid-column: 1/-1;
+}
+ul {
+    list-style: none;
+    text-align: center;
+    grid-column: 1/-1;
+}
